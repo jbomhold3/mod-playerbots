@@ -697,8 +697,8 @@ void RandomPlayerbotMgr::CheckBgQueue()
 
 void RandomPlayerbotMgr::CheckLfgQueue()
 {
-    if (!LfgCheckTimer || time(nullptr) > (LfgCheckTimer + 30))
-        LfgCheckTimer = time(nullptr);
+ //   if (!LfgCheckTimer || time(nullptr) > (LfgCheckTimer + 30))
+   //     LfgCheckTimer = time(nullptr);
 
     LOG_INFO("playerbots", "Checking LFG Queue...");
 
