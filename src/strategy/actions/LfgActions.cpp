@@ -185,16 +185,16 @@ bool LfgJoinAction::JoinLFG()
             _roles = "DPS";
     }*/
 
-   // LFGDungeonEntry const* dungeon;
+    /*LFGDungeonEntry const* dungeon;
 
-    //if(!random)
-    //    dungeon = list.begin();
+    if(!random)
+        dungeon = *list.begin();
 
-    //bool many = list.size() > 1;
+    bool many = list.size() > 1;
 
     if (random)
     {
-        LfgDungeonSet randList = sLFGMgr->GetRandomDungeonsForPlayer(bot);
+        LFGDungeonSet randList = sLFGMgr->GetRandomDungeonsForPlayer(bot);
         for (LFGDungeonSet::const_iterator itr = randList.begin(); itr != randList.end(); ++itr)
         {
             LFGDungeonEntry const* dungeon = *itr;
@@ -234,7 +234,7 @@ bool LfgJoinAction::JoinLFG()
         pState->SetType(LFG_TYPE_DUNGEON);
         LOG_INFO("playerbots", "Bot {} {}:{} <{}>: queues LFG, Dungeon as {} ({})",
         bot->GetGUID().ToString().c_str(), bot->GetTeamId() == TEAM_ALLIANCE ? "A" : "H", bot->getLevel(), bot->GetName().c_str(), _roles, many ? "several dungeons" : dungeon->Name[0]);
-    }
+    }*/
 
     // Set RbotAId Browser comment
     std::string const _gs = std::to_string(botAI->GetEquipGearScore(bot, false, false));
